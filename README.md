@@ -5,8 +5,9 @@ This tool removes DRM from your Kindle books (`.azw` files) using your installed
 ## Requirements
 
 1.  **Python 3.7+**
-2.  **Kindle for PC** installed and authorized.
-    *   *Important:* You must be able to open and read the books in Kindle for PC on this computer.
+2.  **Kindle for PC version 1.26 Build 55076** installed and authorized.
+    *   ⚠️ *Important:* This specific version is tested and confirmed to work. Newer versions may not allow key extraction.
+    *   You must be able to open and read the books in Kindle for PC on this computer.
 3.  **Calibre** (optional, for conversion to EPUB/PDF).
     *   If installed, the tool will automatically convert the files.
 
@@ -37,6 +38,6 @@ The tool will:
 
 *   **"Found 0 keys"**:
     *   The script will prompt you to enter a **Kindle Serial Number** (if you have a physical device) or the path to a `.kinf` file.
-    *   If you don't have a physical Kindle, you may need to downgrade Kindle for PC to version 1.24 or older for key detection to work automatically.
+    *   If you don't have a physical Kindle, you need to use **Kindle for PC version 1.26 Build 55076** for key detection to work automatically.
 *   **"Calibre not found"**: If you want conversion, install Calibre or add `ebook-convert` to your system PATH.
 *   **"Could not find My Kindle Content"**: If your content is in a custom location, drag and drop the folder into the terminal when prompted.
